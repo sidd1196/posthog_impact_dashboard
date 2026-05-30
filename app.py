@@ -95,7 +95,7 @@ def compute_scores(prs_raw, reviews_raw, pr_comments_raw, issue_comments_raw, co
             "created_at": p["created_at"],
             "merged_at": merged_at,
             "html_url": p.get("html_url", ""),
-            "labels": [l["name"] for l in p.get("labels", [])],
+            "labels": [l["name"] if isinstance(l, dict) else l for l in p.get("labels", [])],
         })
     pr_df = pd.DataFrame(prs) if prs else pd.DataFrame(columns=["number","author","title","created_at","merged_at","html_url","labels"])
 
