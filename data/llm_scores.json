@@ -1,0 +1,379 @@
+{
+  "pauldambra": {
+    "avg_complexity": 4.7,
+    "pr_analyses": [
+      {
+        "number": 60122,
+        "title": "feat(max): show hands-free mic on the homepage idle input",
+        "html_url": "https://github.com/PostHog/posthog/pull/60122",
+        "complexity_score": 4,
+        "category": "feature",
+        "reasoning": "The PR adds a hands-free mic button to the homepage idle input, which is a standard feature implementation with limited scope. The changes are straightforward and do not involve complex algorithms or architectural changes, making it a moderate complexity PR."
+      },
+      {
+        "number": 60749,
+        "title": "fix(visual_review): allow tolerate via personal API keys",
+        "html_url": "https://github.com/PostHog/posthog/pull/60749",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "This PR is a moderate bug fix as it involves updating the scope_object_write_actions in the RunViewSet to allow tolerate action via personal API keys. The change is isolated and does not require significant architectural changes or complex algorithms."
+      },
+      {
+        "number": 60683,
+        "title": "feat(user_interviews): render interview transcripts as chat bubbles",
+        "html_url": "https://github.com/PostHog/posthog/pull/60683",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR introduces a new component to parse and render interview transcripts as chat bubbles, which is a standard feature addition with moderate technical complexity. The work is self-contained and doesn't appear to have broad architectural implications or platform-wide impact."
+      }
+    ]
+  },
+  "sampennington": {
+    "avg_complexity": 6.0,
+    "pr_analyses": [
+      {
+        "number": 60707,
+        "title": "fix(insights): correct hog-charts bar hover shading and grouped click routing",
+        "html_url": "https://github.com/PostHog/posthog/pull/60707",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR fixes two specific interaction bugs in the hog-charts BarChart, which is a moderate task that requires understanding of the chart's functionality and behavior. The changes are isolated to the BarChart component and do not appear to have a broad architectural impact."
+      },
+      {
+        "number": 60488,
+        "title": "fix(insights): split aggregated bar bands per series",
+        "html_url": "https://github.com/PostHog/posthog/pull/60488",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR fixes two related bugs in the aggregated horizontal bar chart, which requires a moderate level of technical understanding of the charting library and its interactions. The changes are isolated to a specific component and do not appear to have a broad, architectural impact on the overall system."
+      },
+      {
+        "number": 60385,
+        "title": "feat(insights): add horizontal funnel bar chart on hog-charts",
+        "html_url": "https://github.com/PostHog/posthog/pull/60385",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR adds a new chart type to the existing insights page, which is a standard feature addition. The work is moderately complex due to the need to integrate with existing feature flags and chart adapters, but it does not appear to involve significant architectural changes or cross-system impacts."
+      }
+    ]
+  },
+  "andrewm4894": {
+    "avg_complexity": 4.7,
+    "pr_analyses": [
+      {
+        "number": 60632,
+        "title": "fix(llma): use toString zero-UUID guard in generation sampling",
+        "html_url": "https://github.com/PostHog/posthog/pull/60632",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific bug in the generation sampling query by using a zero-UUID guard, which is a moderate change with limited scope. The impact is contained within the llma-generation-summarization-coordinator-schedule workflow, and the fix does not introduce significant architectural changes or cross-system features."
+      },
+      {
+        "number": 60469,
+        "title": "feat(slack): randomize ack emoji on @PostHog mentions",
+        "html_url": "https://github.com/PostHog/posthog/pull/60469",
+        "complexity_score": 4,
+        "category": "feature",
+        "reasoning": "The PR introduces a small, isolated feature to randomize the acknowledgement emoji in the Slack bot, which is a straightforward and limited-scope change. The addition of a helper function and modification of the existing Slack thread handling code does not imply significant architectural or technical complexity."
+      },
+      {
+        "number": 60463,
+        "title": "feat(llma): copy link to skill file",
+        "html_url": "https://github.com/PostHog/posthog/pull/60463",
+        "complexity_score": 4,
+        "category": "feature",
+        "reasoning": "This PR adds a small feature to the skill viewer, introducing a copy link icon to simplify file sharing. The change is isolated and doesn't appear to have significant architectural implications or broad impact."
+      }
+    ]
+  },
+  "Gilbert09": {
+    "avg_complexity": 6.3,
+    "pr_analyses": [
+      {
+        "number": 60539,
+        "title": "feat(data-warehouse): make destination UI warehouse-table aware",
+        "html_url": "https://github.com/PostHog/posthog/pull/60539",
+        "complexity_score": 4,
+        "category": "feature",
+        "reasoning": "The PR makes targeted UI changes to support a specific data-warehouse table source, which is a standard feature addition. The changes are isolated and do not appear to have broad architectural or platform-wide implications."
+      },
+      {
+        "number": 59608,
+        "title": "fix(data-warehouse): reduce linkedin ads api calls and handle daily rate limits",
+        "html_url": "https://github.com/PostHog/posthog/pull/59608",
+        "complexity_score": 7,
+        "category": "bugfix",
+        "reasoning": "The PR addresses a specific issue with LinkedIn Ads API calls and daily rate limits, requiring changes to the data warehouse source to handle these limits and reduce call volume. The fix involves understanding the LinkedIn API rate limits and implementing a solution to work within these constraints, which is a moderately complex task."
+      },
+      {
+        "number": 59598,
+        "title": "fix(data-warehouse): recover postgres imports from dropped connections",
+        "html_url": "https://github.com/PostHog/posthog/pull/59598",
+        "complexity_score": 8,
+        "category": "bugfix",
+        "reasoning": "The PR addresses a complex issue with long-running Postgres imports failing due to dropped connections, requiring a deep understanding of database transactions and cursors. The fix involves modifying the streaming read path to handle suspended producers and idle transactions, making it a high-technical-challenge bug fix."
+      }
+    ]
+  },
+  "rafaeelaudibert": {
+    "avg_complexity": 6.0,
+    "pr_analyses": [
+      {
+        "number": 60566,
+        "title": "fix(search): validate cmd+k shift+enter href before opening in new tab",
+        "html_url": "https://github.com/PostHog/posthog/pull/60566",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific security vulnerability in the Shift+Enter handler, which is a moderate technical challenge. The fix is isolated to a particular feature and does not require significant architectural changes or cross-system modifications."
+      },
+      {
+        "number": 60370,
+        "title": "refactor: Simplify bottom-left sidebar section",
+        "html_url": "https://github.com/PostHog/posthog/pull/60370",
+        "complexity_score": 6,
+        "category": "refactor",
+        "reasoning": "The PR involves consolidating and renaming components, which indicates a moderate level of technical complexity. The changes are limited in scope, affecting only the Help menu and related logic, but still require some understanding of the existing architecture."
+      },
+      {
+        "number": 59986,
+        "title": "feat(health-alerts): mount entry points and add per-check render_alert",
+        "html_url": "https://github.com/PostHog/posthog/pull/59986",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR introduces new functionality to enhance health alerts, including per-check render alerts and entry points, which is a standard feature addition. The changes are contained within the health alerts system, making it a moderate complexity score."
+      }
+    ]
+  },
+  "webjunkie": {
+    "avg_complexity": 5.7,
+    "pr_analyses": [
+      {
+        "number": 60693,
+        "title": "fix(ci): exempt github noreply emails from the author-email nudge",
+        "html_url": "https://github.com/PostHog/posthog/pull/60693",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with the author-email nudge, exempting GitHub noreply emails from the check, which is a relatively isolated bug fix. The change is straightforward and does not involve significant architectural changes or complex algorithms."
+      },
+      {
+        "number": 60639,
+        "title": "fix(ci): unblock test-timing auto-commit and de-tax durations",
+        "html_url": "https://github.com/PostHog/posthog/pull/60639",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR addresses specific issues with the test-timing auto-commit and duration calculations, which is a moderate-level bug fix. The changes are contained within the CI workflow and do not appear to have a broad, architectural impact on the overall system."
+      },
+      {
+        "number": 60402,
+        "title": "fix(ci): close stale-bot gaps for re-marking and active-PR auto-close",
+        "html_url": "https://github.com/PostHog/posthog/pull/60402",
+        "complexity_score": 7,
+        "category": "bugfix",
+        "reasoning": "The PR addresses a specific gap in the stale-PR workflow, requiring an understanding of the existing system and its limitations. The fix involves modifying the workflow to handle re-marking and auto-closing of PRs, which is a moderately complex task due to the interaction with the existing stale-bot mechanism."
+      }
+    ]
+  },
+  "rnegron": {
+    "avg_complexity": 4.7,
+    "pr_analyses": [
+      {
+        "number": 60705,
+        "title": "fix(devbox): don't pin region on coder update",
+        "html_url": "https://github.com/PostHog/posthog/pull/60705",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific bug related to region-aware devbox updates, which is a moderate technical challenge. The solution involves understanding the interaction between devbox and Coder, but it's an isolated bug fix without broad architectural implications."
+      },
+      {
+        "number": 60483,
+        "title": "fix(devbox): pin workspace_region on coder update",
+        "html_url": "https://github.com/PostHog/posthog/pull/60483",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with the interactive picker in Coder when the workspace_region option is modified. The solution is relatively isolated and does not involve significant architectural changes or complex algorithms."
+      },
+      {
+        "number": 60475,
+        "title": "fix(hogli): suppress first-run telemetry notice in CI",
+        "html_url": "https://github.com/PostHog/posthog/pull/60475",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with the first-run telemetry notice in CI environments, which is a relatively isolated bug fix. The changes are straightforward and do not involve significant architectural changes or complex algorithms."
+      }
+    ]
+  },
+  "haacked": {
+    "avg_complexity": 6.7,
+    "pr_analyses": [
+      {
+        "number": 60286,
+        "title": "fix(flags): accurate billing metrics and atomics for authoritative mode",
+        "html_url": "https://github.com/PostHog/posthog/pull/60286",
+        "complexity_score": 8,
+        "category": "bugfix",
+        "reasoning": "The PR addresses a non-trivial bug that affects billing metrics and requires changes to handle edge cases, such as unchecked subtraction on u64 values. The fix involves understanding the nuances of the billing aggregator's metrics and the implications of retry mechanisms on revenue loss calculations."
+      },
+      {
+        "number": 59550,
+        "title": "feat(flags): loosen flags cache verifier and pass through unknown keys",
+        "html_url": "https://github.com/PostHog/posthog/pull/59550",
+        "complexity_score": 6,
+        "category": "bugfix",
+        "reasoning": "The PR addresses specific issues with the flags cache verifier, resolving spurious mismatches caused by differences in serialization and unknown JSONB keys. The changes are targeted and do not appear to introduce significant architectural changes or cross-system features, warranting a moderate complexity score."
+      },
+      {
+        "number": 60179,
+        "title": "feat(flags): add per-team request/response body logging",
+        "html_url": "https://github.com/PostHog/posthog/pull/60179",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR adds a new feature for per-team request/response body logging, which is a standard feature that requires some development effort but is isolated in scope. The changes are moderate in complexity, as they involve adding a new instance setting and logging mechanism, but do not appear to require significant architectural changes."
+      }
+    ]
+  },
+  "gantoine": {
+    "avg_complexity": 5.0,
+    "pr_analyses": [
+      {
+        "number": 60549,
+        "title": "fix(visual-review): Block client-supplied github_check_run_id",
+        "html_url": "https://github.com/PostHog/posthog/pull/60549",
+        "complexity_score": 7,
+        "category": "bugfix",
+        "reasoning": "The PR involves a moderately complex fix that requires changes to multiple components, including the API facade and logic layers, to address a security vulnerability. The changes are targeted and well-contained, but the impact is significant as it prevents client-supplied data from entering the database, warranting a high score."
+      },
+      {
+        "number": 59486,
+        "title": "fix(hobby): preserve .env on reinstall instead of overwriting",
+        "html_url": "https://github.com/PostHog/posthog/pull/59486",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with the deploy-hobby script overwriting the .env file, which is a moderate technical challenge. The change is isolated and does not require significant architectural changes or cross-system features, making it a standard bug fix."
+      },
+      {
+        "number": 59399,
+        "title": "fix(devbox): quote IdentityAgent socket path in coder ssh config",
+        "html_url": "https://github.com/PostHog/posthog/pull/59399",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "This PR is a moderate bug fix as it involves resolving a specific issue with the IdentityAgent socket path in the coder ssh config. The solution is relatively isolated and does not require significant architectural changes or complex algorithms."
+      }
+    ]
+  },
+  "MattBro": {
+    "avg_complexity": 4.0,
+    "pr_analyses": [
+      {
+        "number": 59751,
+        "title": "fix(security): only fire credential review for partner-provisioned PATs",
+        "html_url": "https://github.com/PostHog/posthog/pull/59751",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with the credential review interstitial, which is a relatively isolated bug fix. The change is contained within the existing system and does not introduce significant architectural changes or complex algorithms."
+      },
+      {
+        "number": 60151,
+        "title": "fix(security): mount personalAPIKeysLogic so review screen renders",
+        "html_url": "https://github.com/PostHog/posthog/pull/60151",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific bug by mounting personalAPIKeysLogic to resolve a 'logic not mounted' error, which is a standard and isolated bug fix. The change is limited in scope and does not introduce significant architectural changes or complex algorithms."
+      },
+      {
+        "number": 56029,
+        "title": "fix(provisioning): scope the provisioned PAT correctly",
+        "html_url": "https://github.com/PostHog/posthog/pull/56029",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR fixes a specific issue with provisioning PAT scopes, which is a contained problem with a clear solution. The change is isolated to a single file and does not appear to have broader architectural implications."
+      }
+    ]
+  },
+  "vdekrijger": {
+    "avg_complexity": 6.3,
+    "pr_analyses": [
+      {
+        "number": 59625,
+        "title": "feat(subscriptions): gate AI summaries on AI credit budget",
+        "html_url": "https://github.com/PostHog/posthog/pull/59625",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR introduces a budget check for AI summaries in subscriptions, which is a standard feature addition that requires some understanding of the existing architecture, but doesn't fundamentally change it. The changes are isolated to a specific area of the codebase, making it a moderate complexity task."
+      },
+      {
+        "number": 59624,
+        "title": "feat(subscriptions): bring subscriptions to the free tier (freemium, synced to alerts)",
+        "html_url": "https://github.com/PostHog/posthog/pull/59624",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR introduces a new feature to the free tier, which requires changes to the existing permission system and subscription limits, but it's a relatively isolated change. The complexity is moderate due to the need to synchronize the subscription limits with the alert free-tier allowance, but it doesn't involve significant architectural changes or cross-system impacts."
+      },
+      {
+        "number": 60276,
+        "title": "fix(subscriptions): restore exports with sharing disabled",
+        "html_url": "https://github.com/PostHog/posthog/pull/60276",
+        "complexity_score": 7,
+        "category": "bugfix",
+        "reasoning": "The PR addresses a specific issue with subscription screenshot generation and delivery when public shared resources are disabled, requiring a nuanced fix to ensure continued functionality. The solution involves modifying the exported asset sharing enforcement, which has implications for the platform's security and functionality, warranting a high complexity score."
+      }
+    ]
+  },
+  "eli-r-ph": {
+    "avg_complexity": 5.7,
+    "pr_analyses": [
+      {
+        "number": 60352,
+        "title": "feat(capture): adjust illegal distinct ID handling in v1",
+        "html_url": "https://github.com/PostHog/posthog/pull/60352",
+        "complexity_score": 6,
+        "category": "feature",
+        "reasoning": "The PR adjusts the handling of illegal distinct IDs in the capture v1 request handler, which is a moderate change that requires consideration of the system's architecture and potential impact on event processing. The score is not higher due to the relatively isolated scope of the change, which only affects the v1 request handler and Kafka header handling."
+      },
+      {
+        "number": 60188,
+        "title": "feat(capture): handle additive changes to event.options in v1",
+        "html_url": "https://github.com/PostHog/posthog/pull/60188",
+        "complexity_score": 7,
+        "category": "feature",
+        "reasoning": "This PR introduces a significant change to the capture v1 event payloads by adding an event.options KV map, which can impact performance and data processing. The change requires careful consideration of the existing architecture and potential downstream effects, warranting a high complexity score."
+      },
+      {
+        "number": 60176,
+        "title": "feat(capture): update v1 endpoint path",
+        "html_url": "https://github.com/PostHog/posthog/pull/60176",
+        "complexity_score": 4,
+        "category": "feature",
+        "reasoning": "This PR updates the v1 endpoint path, which is a standard feature change with limited scope. The impact is moderate, as it requires corresponding updates to the RFC and OpenAPI spec, but does not involve complex algorithms or architectural changes."
+      }
+    ]
+  },
+  "joshsny": {
+    "avg_complexity": 4.0,
+    "pr_analyses": [
+      {
+        "number": 60725,
+        "title": "fix(gateway): apply posthog property headers on openai routes",
+        "html_url": "https://github.com/PostHog/posthog/pull/60725",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR is moderately complex as it involves adding support for applying headers to OpenAI routes, which is a specific and isolated bug fix. The change is contained within the gateway and does not appear to have broad architectural implications."
+      },
+      {
+        "number": 60656,
+        "title": "fix(signals): always allow local domains",
+        "html_url": "https://github.com/PostHog/posthog/pull/60656",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "The PR is a straightforward bug fix that allows local domains to be allowlisted for all ports, which is a limited-scope change. The impact is isolated to the signals pipeline and does not involve significant architectural changes or cross-system features."
+      },
+      {
+        "number": 60649,
+        "title": "fix(signals): default inbox deep link to posthog-code scheme",
+        "html_url": "https://github.com/PostHog/posthog/pull/60649",
+        "complexity_score": 4,
+        "category": "bugfix",
+        "reasoning": "This PR is a straightforward bug fix that changes the default scheme for inbox deep links to target the production desktop app. The change is isolated and does not introduce significant architectural changes or complexity."
+      }
+    ]
+  }
+}

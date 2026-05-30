@@ -1,0 +1,11 @@
+workweave_env/
+__pycache__/
+*.pyc
+.DS_Store
+fetch_data.py
+llm_analysis.py
+Engineering_Impact_Dashboard_Assignment.txt
+gemini_key.json
+groq_key.json
+*.json.key
+
